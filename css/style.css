@@ -1,11 +1,4 @@
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('/fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('/fonts/opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 /********* Genral ***************/
 html{
@@ -13,9 +6,70 @@ html{
 
 }
 body{
-    font-family:"open_sansregular" ;
+    font-family: 'Hind Siliguri';
+    font-size: 2.3rem;
+    background-color: gray;
+}
+:root{
+    --main-color:rgb(2, 204, 2);
+}
+/********************************/
+
+/*--------------Header***********/
+/******Menu**********/
+.menu{
+    background-color: white;
+}
+.icon-logo-flex{
+    display: flex;
+    justify-content:space-between;
+}
+.menu-icon{
+  
+    cursor: pointer;
+    color: var(--main-color);
+    font-size: 2.6rem;
+}
+.menu-list{
+   margin-top: -1.4rem; 
+   margin-left: -2rem;
+   
+}
+.menu-list li{
+    text-transform: uppercase;
+    margin-top: 2.4rem;
+    font-weight: 400;
+    list-style: none;
+    font-size: 1.7rem;
 }
 
+.menu-list li:last-child{
+    margin-bottom: 2rem;
+}
+.menu-list .link{
+    text-decoration: none;
+    color: rgb(151, 151, 151);
+}
+.menu-list .link:hover{
+    color: var(--main-color);
+}
+.main-logo{
+  
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    font-size: 2.6rem;
+}
+.dropdown-content{
+    max-height: 0;
+    overflow: hidden;
+   transition: max-height 0.4s ease-in-out;
+}
+.show-content{
+    max-height: 100vh; 
+    transition: max-height 1s ease-in-out;
+}
+/******** Dev Sliding Images*****/
 .dev-container{
     width: 80%;
     margin: 0 auto;  
@@ -61,12 +115,19 @@ padding: 0;
 i{
     font-size: 2rem;
     padding: 1.5rem;
+    
+}
+.icons-contact{
+    font-size: 2rem;
+    padding: 1.5rem;
     color: black;
     z-index: 100;
     top: 45%;
     transition: all 0.4s;
 }
-i:hover{
+.icons-contact:hover{
     cursor: pointer;
     background-color: rgb(159, 226, 159);
 }
+
+
