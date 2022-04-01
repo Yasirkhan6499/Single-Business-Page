@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('/fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/********* Genral ***************/
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-family:"open_sansregular" ;
+}
+
+.dev-container{
+    width: 80%;
+    margin: 0 auto;  
+    /* border: 2px red solid; */
+    overflow: hidden;
+}
+.dev__image-slider1{
+    /* display: flex;
+    gap: 1rem; */
+ position: relative; 
+
+padding: 0;
+
+/* border: 2px solid blue; */
+}
+
+.dev__img{
+     position: absolute; 
+    /* position: relative; */
+    transition: all 1.5s;
+    list-style-type: none;
+    
+}
+.dev__img:hover .icons-container{
+    opacity: 1;
+}
+.dev__img img{
+    width: 25.85vw;
+    
+    
+}
+.icons-container{
+   
+    
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+i{
+    font-size: 2rem;
+    padding: 1.5rem;
+    color: black;
+    z-index: 100;
+    top: 45%;
+    transition: all 0.4s;
+}
+i:hover{
+    cursor: pointer;
+    background-color: rgb(159, 226, 159);
+}
