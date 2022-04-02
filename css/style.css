@@ -9,9 +9,10 @@ body{
     font-family: 'Hind Siliguri';
     font-size: 2.3rem;
    height: 200vh;
+
 }
 :root{
-    --main-color:rgb(2, 204, 2);
+    --main-color:rgb(2, 204, 160);
 }
 /********************************/
 
@@ -129,8 +130,66 @@ body{
     background-size: cover;
     height: 100vh;
 
-   
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero__content{
+    color: white;
+}
+.hero__content h1{
+    font-weight: 500;
+    font-size: clamp(4rem,6vw,6rem);
+}
+.hero__content p{
+    color: rgb(202, 202, 202);
+    font-size: 1.7rem;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    margin-top: -1rem;
+    margin-bottom: 3.6rem;
+}
+/*-- Buttons */
+.btn{
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 3rem;
+    padding: 1.5rem 3rem;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    word-spacing: 2.7px;
+
+    transition: all 0.5s;
+}
+.btn--learn{
+    background-color: transparent;
+    border: 2px solid white;
+    outline: none;
+    margin-right: 1.5rem ;
+    display: none;
+    
+}
+.btn--learn:hover{
+    background: var(--main-color);
+    border: none;
+}
+.btn--meet{
+    color: rgb(88, 88, 88);
+    border: none;
+}
+.btn--meet:hover{
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+}
+
+/**** screen size 900px ----*/
+@media screen and (min-width: 900px){
+    .btn--learn{
+        display: inline-block;
+    }
 }
 /******** Dev Sliding Images*****/
 .dev-container{
