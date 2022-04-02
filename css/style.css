@@ -185,10 +185,15 @@ body{
     border: 2px solid white;
 }
 
-/**** screen size 900px ----*/
+/**** screen size 900px and 1200px ----*/
 @media screen and (min-width: 900px){
     .btn--learn{
         display: inline-block;
+    }
+}
+@media screen and (min-width: 900px){
+    .hero__content h1{
+        width: 20ch;
     }
 }
 /******** Dev Sliding Images*****/
