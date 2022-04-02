@@ -8,7 +8,7 @@ html{
 body{
     font-family: 'Hind Siliguri';
     font-size: 2.3rem;
-    background-color: gray;
+   height: 200vh;
 }
 :root{
     --main-color:rgb(2, 204, 2);
@@ -18,21 +18,31 @@ body{
 /*--------------Header***********/
 /******Menu**********/
 .menu{
+    position: fixed;
+    top: 0;
     background-color: white;
+    width: 100vw;
+   
+   
 }
 .icon-logo-flex{
     display: flex;
     justify-content:space-between;
+    
 }
+
 .menu-icon{
   
     cursor: pointer;
     color: var(--main-color);
     font-size: 2.6rem;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
 }
 .menu-list{
-   margin-top: -1.4rem; 
+   margin-top: 0rem; 
    margin-left: -2rem;
+   margin-bottom: 1rem;
    
 }
 .menu-list li{
@@ -54,11 +64,13 @@ body{
     color: var(--main-color);
 }
 .main-logo{
-  
+    margin-bottom: 0;
     margin-top: 2rem;
     margin-left: 1.5rem;
     font-weight: 500;
     font-size: 2.6rem;
+
+    transition: all 0.3s ease-in-out;
 }
 .dropdown-content{
     max-height: 0;
@@ -68,6 +80,57 @@ body{
 .show-content{
     max-height: 100vh; 
     transition: max-height 1s ease-in-out;
+}
+
+@media screen and (min-width: 900px) {
+    .menu-icon{
+  
+      transform: scaleY(0);
+        
+    }
+    .dropdown-content{
+        max-height: 100vh;
+        
+    }
+    .menu{
+        padding: 0 0 1.3rem;
+    }
+    .menu-list{
+        position: absolute;
+        top: 0.5rem;
+        right: 0;
+    }
+    .menu-list li{
+      display: inline-block;
+      margin-right: 2.6rem;
+      font-weight: 500;
+     
+    }
+   
+    
+}
+@media screen and (min-width: 1200px){
+  .menu-list{
+      margin-right: 10rem;
+  }
+  .main-logo{
+      margin-left: 10rem;
+      font-size: 3.4rem;
+  }
+  .menu{
+      padding-top: 4rem;
+  }
+}
+/***Header Hero ***********/
+.header__hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("/images/header-bg.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+   
+   
 }
 /******** Dev Sliding Images*****/
 .dev-container{
