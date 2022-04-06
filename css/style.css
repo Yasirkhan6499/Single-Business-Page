@@ -8,8 +8,6 @@ html{
 body{
     font-family: 'Hind Siliguri';
     font-size: 2.3rem;
-   height: 200vh;
-
 }
 :root{
     --main-color:rgb(2, 204, 160);
@@ -148,7 +146,7 @@ body{
     word-spacing: 3px;
     letter-spacing: 2px;
     margin-top: -1rem;
-    margin-bottom: 3.6rem;
+ 
 }
 /*-- Buttons */
 .btn{
@@ -160,14 +158,20 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     word-spacing: 2.7px;
+    
 
     transition: all 0.5s;
+}
+.hero__btns{
+margin-top: 4rem;
+height: 2rem;
 }
 .btn--learn{
     background-color: transparent;
     border: 2px solid white;
     outline: none;
     margin-right: 1.5rem ;
+    width:max-content;
     display: none;
     
 }
@@ -183,6 +187,7 @@ body{
     color: white;
     background: transparent;
     border: 2px solid white;
+    
 }
 
 /**** screen size 900px and 1200px ----*/
@@ -258,3 +263,58 @@ i{
 }
 
 
+/**************** Service Section ************/
+.services-section{
+    padding: 10rem 5rem;
+    display: grid;
+    gap: 2rem;
+    background-color: rgb(241, 241, 241);
+}
+
+.service{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 20px 2px rgb(211, 211, 211);
+    transition: all 0.3s ease-in-out;
+    padding: 4rem;
+}
+
+.service:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px 10px rgb(211, 211, 211); ;
+}
+.container{
+ 
+    margin: auto;
+}
+.service i{
+font-size: 4rem;
+opacity: 0.8;
+}
+.service h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.service__line{
+    border-bottom: 3px solid var(--main-color);
+    width: 5rem;
+    margin: auto;
+}
+.service p{
+  font-size: 1.6rem;
+  color: gray;
+  line-height: 2;
+  
+}
+
+/*** For PC ***/
+@media screen and (min-width: 830px) {
+    .services-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1050px) {
+    .services-section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
