@@ -9,6 +9,8 @@ body{
     font-family: 'Hind Siliguri';
     font-size: 2.3rem;
     line-height: 1.5;
+    background-color: transparent;
+  
 }
 :root{
     --main-color:rgb(2, 204, 160);
@@ -388,4 +390,105 @@ margin-top: 5rem;
         flex-direction: row;
         padding: 10rem;
     }
+}
+
+
+/******** Video Section **************/
+.video-section{
+    position: relative;
+
+   background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.7)),url(/images/video-bg.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   text-align: center;
+
+   padding: 5rem;
+
+}
+.video__icon{
+    color: var(--main-color);
+    font-size: 5.7rem;
+    cursor: pointer;
+    padding: 0;
+
+    transform: scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+.video__icon:hover{
+    transform: scale(1.2);
+}
+.video-section h2{
+    color: white;
+    font-weight: 400;
+    font-size: 3.2rem;
+    margin: 0.4rem 0 1rem
+}
+.video-section p{
+    color: rgb(185, 185, 185);
+    font-size: 1.7rem;
+    
+}
+
+/*** Video itself ****/
+
+.video__btn{
+    text-align: right;
+}
+.video__btn button{
+    background: transparent;
+    color: gray;
+    font-weight: bold;
+    border: none;
+}
+.video__btn button:hover{
+    color: white;
+    cursor: pointer;
+}
+.video__container{
+    width: 70vw;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    display: none;
+    z-index: 100;
+}
+.video__container iframe{
+    width: 70vw;
+    height: 50vh;
+}
+/***** For PC *******/
+@media screen and (min-width: 700px) {
+    .video-section h2{
+        font-size: 3.8rem;
+    }
+    .video-section p{
+        color: rgb(185, 185, 185);
+        font-size: 2rem;
+        
+    }
+    .video__container{
+     display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .video-section p{
+        width: 70ch;
+        margin: auto;
+    }
+    .video__container{
+        width: 60vw;
+        height: 50vh;
+    
+        left: 20%;
+        
+    }
+    .video__container iframe{
+        width: 60vw;
+        height: 70vh;
+    }
+
 }
