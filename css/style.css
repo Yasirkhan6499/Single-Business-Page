@@ -26,7 +26,7 @@ body{
     top: 0;
     background-color: white;
     width: 100vw;
-   
+   z-index: 1000;
    
 }
 .icon-logo-flex{
@@ -92,10 +92,7 @@ body{
       transform: scaleY(0);
         
     }
-    .dropdown-content{
-        max-height: 100vh;
-        
-    }
+    
     .menu{
         padding: 0 0 1.3rem;
     }
@@ -103,6 +100,7 @@ body{
         position: absolute;
         top: 0.5rem;
         right: 0;
+        max-height: 100vh;
     }
     .menu-list li{
       display: inline-block;
@@ -493,4 +491,71 @@ margin-top: 5rem;
         height: 70vh;
     }
 
+}
+
+
+/********* Question Section ***********/
+.questions-section{
+    padding: 10rem 0;
+    background-color: rgb(243, 243, 243);
+}
+.questions__header{
+text-align: center;
+font-size: 2rem;
+margin-bottom: 6rem;
+}
+.questions__header h2{
+    margin: 0 0 -1rem;
+    font-weight: 500;
+    font-size: 3.4rem;
+}
+.questions__header p{
+    font-size: 1.7rem;
+    color: var(--para-color);
+}
+.questions__container{
+    
+}
+.questions__container article{
+    margin: 1.5rem; 
+}
+.question{
+    background-color: rgb(233, 233, 233);
+    padding: 0.6rem 3rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+.question__asked{
+    color: var(--para-color);
+    margin: 1rem 0;
+    font-size: 1.8rem;
+}
+.plus{
+    margin: 0;
+    margin-top: 0.4rem;
+    margin-right: -1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.question__content{
+    background: rgb(251, 251, 251);
+    color: rgb(163, 163, 163);
+    font-size: 1.7rem;
+    transition: all 0.3s ease-in-out;
+
+}
+.content__padding{
+    padding: 2rem 3rem;
+}
+
+/**** For PC **/
+@media screen and (min-width: 780px) {
+    .questions__container article{
+        width: 60%;
+        margin: 1.5rem auto;
+    }
 }

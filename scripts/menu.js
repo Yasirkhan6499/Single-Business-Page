@@ -1,15 +1,43 @@
-let dropdown_btn = document.querySelector(".dropdown-btn");
+let dropdown_btn = document.querySelectorAll(".dropdown-btn");
 let menu = document.querySelector(".menu");
 let main_logo = document.querySelector(".main-logo");
 
-dropdown_btn.addEventListener("click",event=>{
-    let dropdown_content = document.querySelector(".dropdown-content");
-    let show_content = dropdown_content.classList;
+// dropdown_btn.addEventListener("click",event=>{
+//     let dropdown_content = document.querySelector(".dropdown-content");
+//     let show_content = dropdown_content.classList;
 
-    show_content.toggle("show-content");
+//     show_content.toggle("show-content");
 
     
-});
+// });
+dropdown_btn.forEach(element=>
+element.addEventListener("click",event=>{
+    let dropdown_content = element.parentElement.nextElementSibling;
+    // let dropdown_content = nextElement.querySelector(".dropdown-content");
+    let show_content = dropdown_content.classList;
+    console.log(element.parentElement);
+    show_content.toggle("show-content");
+
+    //-----if question section
+    if(dropdown_content.classList.contains("question__content")){
+    show_content.toggle("content__padding");
+    //change plus to minus or vise versa
+    //const element = document.querySelector(".plus");
+    if(element.textContent === "+"){
+    element.textContent = "-";
+    element.style.fontSize = "2.8rem"
+    element.style.marginTop = "-0.4rem";
+    }
+    else {
+    element.textContent = "+";
+    element.style.fontSize = "2rem";
+    element.style.marginTop = "0.4rem";
+    }
+
+    }
+ 
+})
+);
 
 //------ if the window width is greater than 900px
 //------ and the menu is at top, then remove the background
