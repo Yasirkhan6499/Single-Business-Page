@@ -513,9 +513,7 @@ margin-bottom: 6rem;
     font-size: 1.7rem;
     color: var(--para-color);
 }
-.questions__container{
-    
-}
+
 .questions__container article{
     margin: 1.5rem; 
 }
@@ -559,3 +557,65 @@ margin-bottom: 6rem;
         margin: 1.5rem auto;
     }
 }
+
+/************ Package Section ***********/
+.packages-section{
+    padding: 10rem 0;
+}
+.packages__container{
+    display: grid;
+    gap: 3.6rem;
+    margin: 3rem;
+}
+.package{
+    border: 3px solid rgba(228, 228, 228, 0.313);
+    text-align: center;
+    width: 100%;
+}
+.package__name {
+    color: var(--para-color);
+    font-weight: 400;
+    font-size: 2.6rem;
+}
+.package__price{
+    color: var(--main-color);
+    font-size: 4rem;
+    font-weight: 100;
+    margin: 0rem 0 -1.8rem;
+}
+.package__time{
+    font-size: 1.6rem;
+    color: var(--para-color);
+}
+.package__features{
+    list-style-type: none;
+    font-size: 1.7rem;
+    color: rgb(186, 186, 186);
+    padding-left: 0;
+    margin-top: 4rem;
+}
+.package__features li{
+    margin-top: 2.4rem;
+}
+
+
+
+/****** For PC Size 800px */
+@media screen and (min-width:800px) {
+    
+
+.packages__container{
+   grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+/****** For PC Size 1200px */
+@media screen and (min-width:1150px) {
+    
+
+    .packages__container{
+       grid-template-columns: repeat(3,1fr);
+    }
+    
+    }
