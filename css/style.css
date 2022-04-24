@@ -840,7 +840,7 @@ margin-bottom: 6rem;
         border: none;
         border-bottom: 1px solid rgba(206, 206, 206, 0.598);
         padding: 1.3rem;
-        width: clamp(400px,30vw,600px);
+       
         
     }
     ::placeholder, .contact__detail p{
@@ -867,8 +867,17 @@ margin-bottom: 6rem;
            margin-right: 10rem;
            margin-top: 0;
         }
+        .contact-section input,.contact-section textarea{
+
+            width: clamp(400px,30vw,600px);      
+        }
        }
 
+       @media screen and (max-width: 420px) {
+        .contact-section textarea{
+            width: 80vw;
+        }
+       }
        /*** Copyright **/
        .copyright{
            background-color: black;
