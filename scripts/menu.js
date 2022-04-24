@@ -50,6 +50,10 @@ window.addEventListener("resize",event=>{
 });
 
 function menuBackground(){
+
+    //--- Add box shadow to menu when scrolling 
+    menu.classList.add("menu-box-shadow");
+
     let menu_background;
     let logo_color;
     if(window.innerWidth >= 900){ //if big screen
@@ -62,8 +66,12 @@ function menuBackground(){
         
         }
         else{
+            
         menu_background = "none";
         logo_color = "white";
+
+         //--- remove box shadow to menu when scrolling 
+    menu.classList.remove("menu-box-shadow");
 
         //-- if logo is up so place it up while scrollbar is at top
         if(window.innerWidth >= 1200)
