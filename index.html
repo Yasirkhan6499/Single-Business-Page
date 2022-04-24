@@ -12,18 +12,418 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>business page</title>
   </head>
   <body>
+    <header class="menu-header">
+      <section class="menu">
+        <div class="icon-logo-flex">
+          <p class="main-logo">
+            Design<span style="color: rgb(0, 252, 0)">.</span>Diva
+          </p>
+          <i class="menu-icon dropdown-btn fa-solid fa-bars"></i>
+        </div>
+        <ul class="menu-list dropdown-content">
+          <li><a href="#" class="link">intro</a></li>
+          <li><a href="#" class="link">Feature</a></li>
+          <li><a href="#" class="link">Team</a></li>
+          <li><a href="#" class="link">Pricing</a></li>
+          <li><a href="#" class="link">Testimonial</a></li>
+          <li><a href="#" class="link">Contact</a></li>
+        </ul>
+      </section>
+      <section class="header__hero">
+        <div class="hero__content">
+          <h1>We Make Your Website Stand Out</h1>
+          <div data-aos="fade-up">
+            <p>The best way to connect people with your brand.</p>
+            <a href=""><button class="btn btn--learn">Learn More</button></a>
+            <a href=""
+              ><button class="btn btn--meet">Meet Our People</button></a
+            >
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- services section -->
+    <section class="services-section">
+      <div class="service" data-aos="fade-right">
+        <div class="container">
+          <i class="fas fa-tablet-alt"></i>
+          <h2>Responsive Design</h2>
+          <div class="service__line"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            doloribus laudantium quas incidunt quos vitae eligendi cum pariatur
+            rem dicta.
+          </p>
+        </div>
+      </div>
+      <div class="service" data-aos="fade-up">
+        <div class="container">
+          <i class="fab fa-html5"></i>
+          <h2>HTML5</h2>
+          <div class="service__line"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            doloribus laudantium quas incidunt quos vitae eligendi cum pariatur
+            rem dicta.
+          </p>
+        </div>
+      </div>
+      <div class="service" data-aos="fade-left">
+        <div class="container">
+          <i class="far fa-bell"></i>
+          <h2>24 Hour Support</h2>
+          <div class="service__line"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            doloribus laudantium quas incidunt quos vitae eligendi cum pariatur
+            rem dicta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+
+    <section class="features-section" data-aos="fade-up">
+      <div class="features__img">
+        <img src="/images/features-mockup.png" alt="2 laptops" />
+      </div>
+      <div class="features__content">
+        <h2 class="features__title">Explore The Features</h2>
+        <p class="features__para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non
+          corporis iure!
+        </p>
+        <div class="features__itself">
+          <i class="fas fa-tablet-alt"></i>
+          <div class="itself__content">
+            <h3>Responsive Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloremque hic blanditiis quidem?
+            </p>
+          </div>
+        </div>
+
+        <div class="features__itself">
+          <i class="fas fa-clone"></i>
+          <div class="itself__content">
+            <h3>Retina Ready</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloremque hic blanditiis quidem?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- video section -->
+    <section class="video-section" data-aos="fade-up">
+      <div class="video__container">
+        <div class="video__btn"><button>x</button></div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/zYhdKPwgjGo"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <i class="video__icon fa-solid fa-circle-play"></i>
+      <h2>Watch Sample video</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+        repudiandae minima reprehenderit ducimus, officia dignissimos!
+      </p>
+    </section>
+
+    <!--Dev Section-->
+
+    <section class="dev-section">
+      <header class="questions__header" style="margin-top: 7rem">
+        <h2 data-aos="zoom-in">Meet Best People</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </header>
+      <div class="dev__image-container">
+        <ul class="dev__image-slider">
+          <li class="dev__img">
+            <div class="icons-container">
+              <i class="icons-contact fa-brands fa-facebook"></i>
+              <i class="icons-contact fa-brands fa-twitter"></i>
+              <i class="icons-contact fa-brands fa-instagram"></i>
+            </div>
+            <img src="/images/team-1.jpg" alt="" />
+            <div class="dev__info">
+              <h3>Full Name Here</h3>
+              <p>Web Developer</p>
+            </div>
+          </li>
+          <li class="dev__img">
+            <img src="/images/team-2.jpg" alt="" />
+            <div class="icons-container">
+              <i class="icons-contact fa-brands fa-facebook"></i>
+              <i class="icons-contact fa-brands fa-twitter"></i>
+              <i class="icons-contact fa-brands fa-instagram"></i>
+            </div>
+            <div class="dev__info">
+              <h3>Full Name Here</h3>
+              <p>Web Developer</p>
+            </div>
+          </li>
+          <li class="dev__img">
+            <img src="/images/team-3.jpg" alt="" />
+            <div class="icons-container">
+              <i class="icons-contact fa-brands fa-facebook"></i>
+              <i class="icons-contact fa-brands fa-twitter"></i>
+              <i class="icons-contact fa-brands fa-instagram"></i>
+            </div>
+            <div class="dev__info">
+              <h3>Full Name Here</h3>
+              <p>Web Developer</p>
+            </div>
+          </li>
+          <li class="dev__img">
+            <img src="/images/team-4.jpg" alt="" />
+            <div class="icons-container">
+              <i class="icons-contact fa-brands fa-facebook"></i>
+              <i class="icons-contact fa-brands fa-twitter"></i>
+              <i class="icons-contact fa-brands fa-instagram"></i>
+            </div>
+            <div class="dev__info">
+              <h3>Full Name Here</h3>
+              <p>Web Developer</p>
+            </div>
+          </li>
+          <li class="dev__img last-img">
+            <div class="icons-container">
+              <i class="icons-contact fa-brands fa-facebook"></i>
+              <i class="icons-contact fa-brands fa-twitter"></i>
+              <i class="icons-contact fa-brands fa-instagram"></i>
+            </div>
+            <img src="/images/team-5.jpg" alt="" />
+            <div class="dev__info">
+              <h3>Full Name Here</h3>
+              <p>Web Developer</p>
+            </div>
+          </li>
+          <!-- adding extra dev images for illusion  -->
+          <li class="dev__img">
+            <div class="icons-container">
+              <i class="icons-contact fa-brands fa-facebook"></i>
+              <i class="icons-contact fa-brands fa-twitter"></i>
+              <i class="icons-contact fa-brands fa-instagram"></i>
+            </div>
+            <img src="/images/team-1.jpg" alt="" />
+            <div class="dev__info">
+              <h3>Full Name Here</h3>
+              <p>Web Developer</p>
+            </div>
+          </li>
+          <li class="dev__img">
+            <img src="/images/team-2.jpg" alt="" />
+            <div class="icons-container">
+              <i class="icons-contact fa-brands fa-facebook"></i>
+              <i class="icons-contact fa-brands fa-twitter"></i>
+              <i class="icons-contact fa-brands fa-instagram"></i>
+            </div>
+            <div class="dev__info">
+              <h3>Full Name Here</h3>
+              <p>Web Developer</p>
+            </div>
+          </li>
+          <li class="dev__img">
+            <img src="/images/team-3.jpg" alt="" />
+            <div class="icons-container">
+              <i class="icons-contact fa-brands fa-facebook"></i>
+              <i class="icons-contact fa-brands fa-twitter"></i>
+              <i class="icons-contact fa-brands fa-instagram"></i>
+            </div>
+            <div class="dev__info">
+              <h3>Full Name Here</h3>
+              <p>Web Developer</p>
+            </div>
+          </li>
+        </ul>
+        <!-- buttons -->
+        <div class="dev__btns-container">
+          <button class="dev__btn"></button>
+          <button class="dev__btn"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Section -->
+    <section class="questions-section">
+      <header class="questions__header">
+        <h2 data-aos="zoom-in">Have Any Questions</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </header>
+      <div class="questions__container" data-aos="fade-up">
+        <article>
+          <div class="question">
+            <p class="question__asked">What is Web Development?</p>
+            <p class="plus dropdown-btn">+</p>
+          </div>
+          <div class="question__content dropdown-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+            tenetur. Dignissimos architecto voluptate quibusdam! Consequatur?<br />
+            <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatem, tenetur?
+          </div>
+        </article>
+
+        <article>
+          <div class="question">
+            <p class="question__asked">
+              What Type Of Website Are Good For Business Purpose?
+            </p>
+            <p class="plus dropdown-btn">+</p>
+          </div>
+          <div class="question__content dropdown-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+            tenetur. Dignissimos architecto voluptate quibusdam! Consequatur?<br />
+            <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatem, tenetur?
+          </div>
+        </article>
+
+        <article>
+          <div class="question">
+            <p class="question__asked">
+              Which Technologies Are Important For Web Development?
+            </p>
+            <p class="plus dropdown-btn">+</p>
+          </div>
+          <div class="question__content dropdown-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo,
+            tenetur. Dignissimos architecto voluptate quibusdam! Consequatur?<br />
+            <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatem, tenetur?
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--Package Section-->
+
+    <section class="packages-section">
+      <header class="questions__header">
+        <h2>Our Packages</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+      </header>
+
+      <div class="packages__container" data-aos="zoom-in">
+        <article>
+          <div class="package">
+            <h3 class="package__name">Business Version</h3>
+            <p class="package__price">$ 120</p>
+            <p class="package__time">Monthly</p>
+            <ul class="package__features">
+              <li>24 Accounts</li>
+              <li>10 GB Storage</li>
+              <li>Lifetime Support</li>
+              <li>Reliable Service</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="package">
+            <h3 class="package__name">Proffesional Version</h3>
+            <p class="package__price">$ 100</p>
+            <p class="package__time">Monthly</p>
+            <ul class="package__features">
+              <li>24 Accounts</li>
+              <li>10 GB Storage</li>
+              <li>Lifetime Support</li>
+              <li>Reliable Service</li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <div class="package">
+            <h3 class="package__name">Standard Version</h3>
+            <p class="package__price">$ 50</p>
+            <p class="package__time">Monthly</p>
+            <ul class="package__features">
+              <li>24 Accounts</li>
+              <li>10 GB Storage</li>
+              <li>Lifetime Support</li>
+              <li>Reliable Service</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!--Testimonial Section-->
+    <section class="testimonials-section">
+      <header class="questions__header" style="color: white">
+        <h2 data-aos="zoom-in">Testimonial Words</h2>
+        <p style="color: white">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+      </header>
+      <div class="testimonial__container" data-aos="fade-up">
+        <div class="testimonial__slider">
+          <div class="testimonial">
+            <img src="/images/test-1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+              tempora cupiditate enim excepturi eum iusto.
+            </p>
+          </div>
+          <div class="testimonial">
+            <img src="/images/test-2.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+              tempora cupiditate enim excepturi eum iusto.
+            </p>
+          </div>
+          <div class="testimonial">
+            <img src="/images/test-3.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+              tempora cupiditate enim excepturi eum iusto.
+            </p>
+          </div>
+          <div class="testimonial">
+            <img src="/images/test-1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+              tempora cupiditate enim excepturi eum iusto.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button class="test-btn active-btn"></button>
+        <button class="test-btn"></button>
+        <button class="test-btn"></button>
+      </div>
+    </section>
+
+    <!--Contact And Footer Section-->
     <footer>
-      <section class="contact-section">
+      <section class="contact-section" data-aos="flip-up">
         <header class="questions__header" style="margin-top: 7rem">
           <h2>Contact Us</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </header>
-        <div class="flex-row">
+        <div class="flex-row" data-aos="fade-up">
           <div class="contact__info">
             <h3>Send Message Here</h3>
             <form action="">
@@ -48,13 +448,19 @@
         <p>Copyright © Yasir.Design Website | All Rights Reserved</p>
       </section>
     </footer>
+
     <script src="/scripts/dev.js"></script>
-    <!-- <script src="/scripts/testimonial.js"></script> -->
-    <!-- <script src="/scripts/menu.js"></script> -->
+    <script src="/scripts/testimonial.js"></script>
+
+    <script src="/scripts/menu.js"></script>
     <script
       src="https://kit.fontawesome.com/e8ad5b69a5.js"
       crossorigin="anonymous"
     ></script>
     <!-- <script src="scripts/script2.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
